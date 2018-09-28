@@ -1,0 +1,1 @@
+[2018-09-21 10:35:26.577] ERROR [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] LogContext.java:301 - [Consumer clientId=consumer-1, groupId=test-consumer-group] Offset commit failed on partition userAccountRecordCheck-0 at offset 6: The coordinator is not aware of this member.

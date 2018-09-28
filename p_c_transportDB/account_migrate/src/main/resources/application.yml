@@ -1,0 +1,75 @@
+spring:
+  application:
+    name: migrate
+  datasource:
+    primary:
+      driver-class-name: com.mysql.jdbc.Driver
+      username: root
+      password: Yy@802020
+      jdbc-url: jdbc:mysql://120.79.180.232/account_qianyi?characterEncoding=utf-8&useSSL=false&autoReconnect=true&failOverReadOnly=false&rewriteBatchedStatements=true&allowMultiQueries=true&connectTimeout=60000&socketTimeout=60000
+      max-active: 50
+      max-idle: 30
+      min-idle: 10
+      max-wait: 60000
+
+    secondary:
+      driver-class-name: com.mysql.jdbc.Driver
+      username: root
+      password: Yy@802020
+      jdbc-url: jdbc:mysql://120.79.180.232/member?characterEncoding=utf-8&useSSL=false&autoReconnect=true&failOverReadOnly=false&rewriteBatchedStatements=true&allowMultiQueries=true&connectTimeout=60000&socketTimeout=60000
+      max-active: 50
+      max-idle: 30
+      min-idle: 10
+      max-wait: 60000
+  jpa:
+    database: mysql
+    generate-ddl: true
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
+  kafka:
+    bootstrap-servers: 192.168.170.136:9092
+    producer:
+      retries: 0
+      batch-size: 26384
+      buffer-memory: 53554432
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+
+
+    consumer:
+      group-id: test-consumer-group
+      auto-commit-interval: 1000
+      auto-offset-reset: latest
+      enable-auto-commit: false
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      max-poll-records: 100
+
+
+  redis:
+    #数据库索引
+    database: 0
+    host: 192.168.56.1
+    port: 6379
+    password:
+    jedis:
+      pool:
+        #最大连接数
+        max-active: 12
+        #最大阻塞等待时间(负数表示没限制)
+        max-wait: -1
+        #最大空闲
+        max-idle: 8
+        #最小空闲
+        min-idle: 0
+    #连接超时时间
+    timeout: 10000
+server:
+  port: 9094
+
+
+
+

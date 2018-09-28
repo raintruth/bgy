@@ -1,0 +1,313 @@
+[2018-09-15 17:57:52.766] INFO [main] StartupInfoLogger.java:50 - Starting AccountMigrateApplicationTests on DESKTOP-CH8LDBT with PID 5272 (started by dell in D:\workgitcode\wallet\account_migrate)
+[2018-09-15 17:57:52.773] INFO [main] SpringApplication.java:662 - No active profile set, falling back to default profiles: default
+[2018-09-15 17:57:52.832] INFO [main] AbstractApplicationContext.java:590 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@4f704591: startup date [Sat Sep 15 17:57:52 CST 2018]; root of context hierarchy
+[2018-09-15 17:57:53.618] INFO [main] RepositoryConfigurationDelegate.java:163 - Multiple Spring Data modules found, entering strict repository configuration mode!
+[2018-09-15 17:57:53.708] INFO [main] RepositoryConfigurationDelegate.java:163 - Multiple Spring Data modules found, entering strict repository configuration mode!
+[2018-09-15 17:57:53.958] INFO [main] RepositoryConfigurationDelegate.java:163 - Multiple Spring Data modules found, entering strict repository configuration mode!
+[2018-09-15 17:57:53.999] INFO [main] RepositoryConfigurationExtensionSupport.java:297 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.pagoda.account.migrate.repository.account.UserAccountRecordRepository.
+[2018-09-15 17:57:54.004] INFO [main] RepositoryConfigurationExtensionSupport.java:297 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.pagoda.account.migrate.repository.account.UserAccountRepository.
+[2018-09-15 17:57:54.005] INFO [main] RepositoryConfigurationExtensionSupport.java:297 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.pagoda.account.migrate.repository.account.UserRepository.
+[2018-09-15 17:57:54.006] INFO [main] RepositoryConfigurationExtensionSupport.java:297 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.pagoda.account.migrate.repository.member.MemberAccountRepository.
+[2018-09-15 17:57:54.006] INFO [main] RepositoryConfigurationExtensionSupport.java:297 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.pagoda.account.migrate.repository.member.MemberRepository.
+[2018-09-15 17:57:54.007] INFO [main] RepositoryConfigurationExtensionSupport.java:297 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.pagoda.account.migrate.repository.member.MemberWalletRecordRepository.
+[2018-09-15 17:57:54.619] INFO [main] PostProcessorRegistrationDelegate.java:326 - Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$e69d780] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2018-09-15 17:57:54.660] INFO [main] PostProcessorRegistrationDelegate.java:326 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3ab7c5fd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2018-09-15 17:57:54.928] INFO [main] LocalContainerEntityManagerFactoryBean.java:361 - Building JPA container EntityManagerFactory for persistence unit 'primaryPersistenceUnit'
+[2018-09-15 17:57:55.014] INFO [main] LogHelper.java:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: primaryPersistenceUnit
+	...]
+[2018-09-15 17:57:55.109] INFO [main] Version.java:45 - HHH000412: Hibernate Core {5.2.17.Final}
+[2018-09-15 17:57:55.111] INFO [main] Environment.java:213 - HHH000206: hibernate.properties not found
+[2018-09-15 17:57:55.158] INFO [main] JavaReflectionManager.java:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[2018-09-15 17:57:55.305] INFO [main] HikariDataSource.java:110 - HikariPool-1 - Starting...
+[2018-09-15 17:57:55.597] INFO [main] HikariDataSource.java:123 - HikariPool-1 - Start completed.
+[2018-09-15 17:57:55.624] INFO [main] Dialect.java:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[2018-09-15 17:57:56.405] INFO [main] AbstractEntityManagerFactoryBean.java:415 - Initialized JPA EntityManagerFactory for persistence unit 'primaryPersistenceUnit'
+[2018-09-15 17:57:56.419] INFO [main] LocalContainerEntityManagerFactoryBean.java:361 - Building JPA container EntityManagerFactory for persistence unit 'secondaryPersistenceUnit'
+[2018-09-15 17:57:56.420] INFO [main] LogHelper.java:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: secondaryPersistenceUnit
+	...]
+[2018-09-15 17:57:56.426] INFO [main] HikariDataSource.java:110 - HikariPool-2 - Starting...
+[2018-09-15 17:57:56.513] INFO [main] HikariDataSource.java:123 - HikariPool-2 - Start completed.
+[2018-09-15 17:57:56.513] INFO [main] Dialect.java:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[2018-09-15 17:57:56.920] INFO [main] AbstractEntityManagerFactoryBean.java:415 - Initialized JPA EntityManagerFactory for persistence unit 'secondaryPersistenceUnit'
+[2018-09-15 17:57:58.463] INFO [main] AbstractUrlHandlerMapping.java:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-15 17:57:58.847] INFO [main] RequestMappingHandlerAdapter.java:574 - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@4f704591: startup date [Sat Sep 15 17:57:52 CST 2018]; root of context hierarchy
+[2018-09-15 17:57:58.931] INFO [main] AbstractHandlerMethodMapping.java:547 - Mapped "{[/userAccount/findUserById],methods=[GET]}" onto public com.pagoda.account.common.result.Result com.pagoda.account.migrate.controller.UserController.findUserById(java.lang.Integer)
+[2018-09-15 17:57:58.934] INFO [main] AbstractHandlerMethodMapping.java:547 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[2018-09-15 17:57:58.935] INFO [main] AbstractHandlerMethodMapping.java:547 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2018-09-15 17:57:58.961] INFO [main] AbstractUrlHandlerMapping.java:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-15 17:57:58.962] INFO [main] AbstractUrlHandlerMapping.java:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-09-15 17:57:59.736] INFO [main] DefaultLifecycleProcessor.java:351 - Starting beans in phase 2147483547
+[2018-09-15 17:57:59.762] INFO [main] AbstractConfig.java:238 - ConsumerConfig values: 
+	auto.commit.interval.ms = 100
+	auto.offset.reset = earliest
+	bootstrap.servers = [192.168.170.136:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = test-consumer-group
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2018-09-15 17:57:59.821] INFO [main] AppInfoParser.java:109 - Kafka version : 1.0.2
+[2018-09-15 17:57:59.821] INFO [main] AppInfoParser.java:110 - Kafka commitId : 2a121f7b1d402825
+[2018-09-15 17:57:59.826] INFO [main] ExecutorConfigurationSupport.java:171 - Initializing ExecutorService 
+[2018-09-15 17:57:59.829] INFO [main] AbstractConfig.java:238 - ConsumerConfig values: 
+	auto.commit.interval.ms = 100
+	auto.offset.reset = earliest
+	bootstrap.servers = [192.168.170.136:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = test-consumer-group
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2018-09-15 17:57:59.833] INFO [main] AppInfoParser.java:109 - Kafka version : 1.0.2
+[2018-09-15 17:57:59.833] INFO [main] AppInfoParser.java:110 - Kafka commitId : 2a121f7b1d402825
+[2018-09-15 17:57:59.834] INFO [main] ExecutorConfigurationSupport.java:171 - Initializing ExecutorService 
+[2018-09-15 17:57:59.835] INFO [main] AbstractConfig.java:238 - ConsumerConfig values: 
+	auto.commit.interval.ms = 100
+	auto.offset.reset = earliest
+	bootstrap.servers = [192.168.170.136:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = test-consumer-group
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2018-09-15 17:57:59.848] INFO [main] AppInfoParser.java:109 - Kafka version : 1.0.2
+[2018-09-15 17:57:59.848] INFO [main] AppInfoParser.java:110 - Kafka commitId : 2a121f7b1d402825
+[2018-09-15 17:57:59.848] INFO [main] ExecutorConfigurationSupport.java:171 - Initializing ExecutorService 
+[2018-09-15 17:57:59.860] INFO [main] StartupInfoLogger.java:59 - Started AccountMigrateApplicationTests in 7.877 seconds (JVM running for 9.13)
+[2018-09-15 17:58:00.386] INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] LogContext.java:341 - [Consumer clientId=consumer-3, groupId=test-consumer-group] Discovered group coordinator 192.168.170.136:9092 (id: 2147483646 rack: null)
+[2018-09-15 17:58:00.389] INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] LogContext.java:341 - [Consumer clientId=consumer-3, groupId=test-consumer-group] Revoking previously assigned partitions []
+[2018-09-15 17:58:00.389] INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] AbstractMessageListenerContainer.java:343 - partitions revoked: []
+[2018-09-15 17:58:00.390] INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] LogContext.java:336 - [Consumer clientId=consumer-3, groupId=test-consumer-group] (Re-)joining group
+[2018-09-15 17:58:00.400] INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] LogContext.java:341 - [Consumer clientId=consumer-1, groupId=test-consumer-group] Discovered group coordinator 192.168.170.136:9092 (id: 2147483646 rack: null)
+[2018-09-15 17:58:00.400] INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] LogContext.java:341 - [Consumer clientId=consumer-2, groupId=test-consumer-group] Discovered group coordinator 192.168.170.136:9092 (id: 2147483646 rack: null)
+[2018-09-15 17:58:00.401] INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] LogContext.java:341 - [Consumer clientId=consumer-1, groupId=test-consumer-group] Revoking previously assigned partitions []
+[2018-09-15 17:58:00.401] INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] LogContext.java:341 - [Consumer clientId=consumer-2, groupId=test-consumer-group] Revoking previously assigned partitions []
+[2018-09-15 17:58:00.401] INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] AbstractMessageListenerContainer.java:343 - partitions revoked: []
+[2018-09-15 17:58:00.401] INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] AbstractMessageListenerContainer.java:343 - partitions revoked: []
+[2018-09-15 17:58:00.402] INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] LogContext.java:336 - [Consumer clientId=consumer-1, groupId=test-consumer-group] (Re-)joining group
+[2018-09-15 17:58:00.402] INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] LogContext.java:336 - [Consumer clientId=consumer-2, groupId=test-consumer-group] (Re-)joining group
+[2018-09-15 17:58:00.542] INFO [Thread-2] AbstractApplicationContext.java:993 - Closing org.springframework.web.context.support.GenericWebApplicationContext@4f704591: startup date [Sat Sep 15 17:57:52 CST 2018]; root of context hierarchy
+[2018-09-15 17:58:00.544] INFO [Thread-2] DefaultLifecycleProcessor.java:366 - Stopping beans in phase 2147483547
+[2018-09-15 17:58:00.547] INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] ExecutorConfigurationSupport.java:208 - Shutting down ExecutorService
+[2018-09-15 17:58:00.547] INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] ExecutorConfigurationSupport.java:208 - Shutting down ExecutorService
+[2018-09-15 17:58:00.547] INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] ExecutorConfigurationSupport.java:208 - Shutting down ExecutorService
+[2018-09-15 17:58:00.583] INFO [consumer-UserAndAccount-queue-thread-0] AbstractConfig.java:238 - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [192.168.170.136:9092]
+	buffer.memory = 33554432
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	enable.idempotence = false
+	interceptor.classes = null
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+[2018-09-15 17:58:00.603] INFO [consumer-UserAndAccount-queue-thread-0] AppInfoParser.java:109 - Kafka version : 1.0.2
+[2018-09-15 17:58:00.604] INFO [consumer-UserAndAccount-queue-thread-0] AppInfoParser.java:110 - Kafka commitId : 2a121f7b1d402825
+[2018-09-15 17:58:01.241] INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] KafkaMessageListenerContainer.java:774 - Consumer stopped
+[2018-09-15 17:58:01.243] INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] KafkaMessageListenerContainer.java:774 - Consumer stopped
+[2018-09-15 17:58:01.243] INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] KafkaMessageListenerContainer.java:774 - Consumer stopped
+[2018-09-15 17:58:01.243] INFO [Thread-2] DefaultLifecycleProcessor.java:366 - Stopping beans in phase 0
+[2018-09-15 17:58:01.267] INFO [Thread-2] LogContext.java:341 - [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+[2018-09-15 17:58:01.271] INFO [Thread-2] AbstractEntityManagerFactoryBean.java:597 - Closing JPA EntityManagerFactory for persistence unit 'secondaryPersistenceUnit'
+[2018-09-15 17:58:01.272] INFO [Thread-2] AbstractEntityManagerFactoryBean.java:597 - Closing JPA EntityManagerFactory for persistence unit 'primaryPersistenceUnit'
+[2018-09-15 17:58:01.272] INFO [Thread-2] HikariDataSource.java:381 - HikariPool-1 - Shutdown initiated...
+[2018-09-15 17:58:01.278] INFO [Thread-2] HikariDataSource.java:383 - HikariPool-1 - Shutdown completed.
+[2018-09-15 17:58:01.278] INFO [Thread-2] HikariDataSource.java:381 - HikariPool-2 - Shutdown initiated...
+[2018-09-15 17:58:01.281] INFO [Thread-2] HikariDataSource.java:383 - HikariPool-2 - Shutdown completed.
